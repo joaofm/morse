@@ -1,7 +1,5 @@
-@media only screen and (max-width: 600px) {
-    input[type="text"]{
-        width: 80px;
-    };
+*{
+    box-sizing: border-box;
 }
 
 body {
