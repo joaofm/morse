@@ -1,0 +1,173 @@
+body {
+    background: #1f0075;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+label {
+    color:white;
+    vertical-align: center;
+}
+
+button {
+    border-radius: 4px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+div p {
+    text-align: center;
+    color:white;
+    margin: 20px auto;
+}
+
+#showAnswer {
+    text-align: center;
+    color:white;
+    margin: 20px auto;
+    width: 100px;
+    height: 10px;
+}
+
+.headerMorse {
+    margin: 0 15px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+.container {
+    text-align: center;
+    margin: 20px auto;
+    width: 360px;
+    
+}
+
+input[type="text"] {
+    
+    width: 100%;
+    padding: 13px 10px;
+    margin: 20px 0;
+    border: rgba(0, 0, 0, 0);
+}
+
+
+#startButton{
+    border: none;
+    background: #3b00df;
+    opacity: 0.7;
+    color:white;
+    box-shadow: none;
+    width: 30%;
+    padding: 13px 13px 13px 20px;
+    margin: 10px 10px;
+    
+}
+
+#relisten{
+    border: none;
+    background: #3b00df;
+    opacity: 0.7;
+    color:white;
+    box-shadow: none;
+    width: 30%;
+    padding: 13px 13px 13px 20px;
+    margin: 10px 10px;
+    
+}
+
+#relisten:disabled{
+    opacity: 0.2;
+}
+
+.correct {
+    background: green;
+    color:white;
+
+}
+
+.incorrect {
+    background: red;
+    color:white;
+
+}
+
+#speed {
+    direction: rtl;
+}
+
+#answer {
+    color:white;
+    text-transform: uppercase;
+    font-size: 10em;
+    margin-bottom: 0;
+    
+}
+#morseAnswer {
+    color:white;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 0;
+    
+}
+
+#answerContainer {
+    height: 250px;
+}
+
+
+
+.input{
+    margin: 10px;
+}
+
+select {
+    height: 25px;
+    color: #1f0075;
+    background: #d3d3d3;
+    vertical-align: middle;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    vertical-align: middle;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #3b00df; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #3b00df; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
