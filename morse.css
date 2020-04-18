@@ -1,3 +1,7 @@
+@media only screen and (max-width: 600px) {
+    input[type="text"];
+}
+
 body {
     background: #1f0075;
     font-family: 'Roboto Condensed', sans-serif;
