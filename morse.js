@@ -38,6 +38,7 @@ morseAnswer.style.display= "none";
 
 startButton.addEventListener("click", function(){
     answerDisplay.style.display = "none";
+    morseAnswer.style.display= "none";
     init();
 
 });
