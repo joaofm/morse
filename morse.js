@@ -132,7 +132,7 @@ function letterToMorse(letter){
 function playTimes(morseSentence){
     relisten.disabled=false;
     showAnswer.textContent = "Show Answer";
-    startButton.textContent = "New Word";
+    startButton.textContent = "New";
     // one context per document
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
     var context = new window.AudioContext;

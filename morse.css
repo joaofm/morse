@@ -1,6 +1,10 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;}
+*{
+    align-items: center;
 }
+
+
 
 body {
     background: #1f0075;
@@ -39,22 +43,24 @@ div p {
 }
 
 .headerMorse {
-    margin: 0 15px;
+    margin: auto 15px;
     font-size: 1.5em;
     letter-spacing: 0.1em;
+    display:inline-block;
 }
 .container {
     text-align: center;
     margin: 20px auto;
-    width: 360px;
+    width: 100%;
     
 }
 
 input[type="text"] {
     
+    
     width: 100%;
     padding: 13px 10px;
-    margin: 20px 0;
+    margin: 20px 5px;
     border: rgba(0, 0, 0, 0);
 }
 
@@ -125,6 +131,7 @@ input[type="text"] {
 
 
 .input{
+
     margin: 10px;
 }
 
@@ -175,3 +182,12 @@ select {
     background: #3b00df; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+  @media (min-width:641px) {
+    .container {
+        text-align: center;
+        margin: 20px auto;
+        width: 360px;
+        
+    }
+}
