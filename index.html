@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;600;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="morse.css">
     <title>Morse Trainer</title>
 </head>
@@ -13,48 +14,50 @@
         <p>
             <span class="headerMorse">-- --- ·-· ··· ·</span><span class="headerMorse">- ·-· ·- ·· -· · ·-·</span>
         </p>
-
-        <div id="answerContainer">
-            <p id="answer"></p>
-            <p id="morseAnswer"></p>
-        </div>
-
-        <div id="showAnswer">
-            
-        </div>
     </div>
 
-    <div class="container">
-
-        <div>
-            <input type="text" id="guess" placeholder = "Guess">
+    <div class="main">
+        <div class="answer">
+            <div id="answerContainer">
+                <p id="answer"></p>
+                <p id="morseAnswer"></p>
+            </div>
+            <div id="showAnswer">
+            </div>
         </div>
-        
-        <div id="speedCharacters">
+
+        <div class="container">
+
+            <div>
+                <input type="text" id="guess" placeholder = "Guess">
+            </div>
             
-            <div class="input">
-                <label for="nLetters">Characters:</label>
-                <select name="nLetters" id="nLetters">
-                    <option value=1>1</option>
-                    <option value=2>2</option>
-                    <option value=3 selected="selected">3</option>
-                    <option value=4>4</option>
-                    <option value=5>5</option>
-                    <option value="numbers">Numbers</option>
-                    <option value="punctuation">Punctuation</option>
-                </select>
+            <div id="speedCharacters">
+                
+                <div class="input">
+                    <label for="nLetters">Characters:</label>
+                    <select name="nLetters" id="nLetters">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3 selected="selected">3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value="numbers">Numbers</option>
+                        <option value="punctuation">Punctuation</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="speed">Speed:</label>
+                    <input class="slider" type="range" name="speed" id="speed" min=0.75 max = 2 step=0.25 value=1>
+                </div>
+
             </div>
-            <div class="input">
-                <label for="speed">Speed:</label>
-                <input class="slider" type="range" name="speed" id="speed" min=0.75 max = 2 step=0.25 value=1>
+            <div>
+                <button id="startButton">Start</button>
+                <button id="relisten" disabled=true>Repeat</button>
             </div>
 
         </div>
-        <div>
-            <button id="startButton">Start</button>
-            <button id="relisten" disabled=true>Repeat</button>
-        </div>
-
     </div>
     <script type= "text/javascript" src="morse.js"></script>
 </body>
